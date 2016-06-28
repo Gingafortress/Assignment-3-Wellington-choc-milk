@@ -1,0 +1,420 @@
+@import "mixins";
+
+$dark-grey:#35383A;
+$red:#B11917;
+$white:#ffffff;
+
+body {
+	margin: 0;
+	font-family:'Open sans', Arial, sans-serif;
+	background-color: $white;
+	@include breakpoint(wide){
+		max-width:1200px;
+		margin:0 auto;
+		box-shadow: 0px 0px 6px 2px #888888;
+	}
+	a {
+	color: $white;
+	}
+	header{
+		background-color: $dark-grey;
+		#desktop-menu {
+			display:none;
+			@include breakpoint(desktop){
+				display:block;
+				float:left;
+				list-style:none;
+				margin: 0;
+				padding-left:.5em;
+				margin-top:.8em;
+
+				box-sizing:border-box;
+				li{
+					display: inline;
+					border-left: solid 2px $red;
+					&:first-child{
+						border-left:none;
+					}
+					a{
+						text-decoration: none;
+						color:$white;
+						font-size:110%;
+						padding:.5em;
+					}
+				}
+			}
+		}
+	}
+	.navigation {
+		margin: auto;
+		overflow: hidden;		
+		.nav {
+			float: left;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			overflow: hidden;;
+			width:100%;
+			ul{
+				width:100%;
+				li{
+					float:left;
+
+				}
+			}
+		}
+		
+		#side-logo{
+			display:none;
+			@include breakpoint(smaller) {
+				display:block;
+				width:360px;
+				padding:.5em;
+				float:left;
+				}
+			@include breakpoint(desktop){
+				display:none}
+		}
+		.btn{
+			@include breakpoint(smaller) {
+				display:none;
+			}
+		}
+		.btn .menu {
+			display: none;
+		}
+		.btn:hover .menu {
+			display: block;
+			list-style: none;
+		}
+		.menu {
+			padding:0;
+			clear: both;
+			width:100%;
+			li {
+				width:50%;
+				margin:0 auto;
+				a {
+					display: block;
+					padding: .5em 0;
+					border: 1px solid $red;
+					text-decoration: none;
+					text-align:center;
+					font-size:14pt
+				} 
+				a:hover {
+					background-color: #f4f4f4;
+				} 
+			}
+		}
+		.social-icons {
+			float: right;
+			width:35px; 
+			padding:.5em; 
+		} 
+		#head-sign-up{
+			display:none;
+			@include breakpoint(smaller) {
+				display:inline;
+				float:right;
+				background-color:$red;
+				color:$white;
+				margin:0 .5em;
+				padding:.5em .7em ;
+				text-decoration:none;
+				font-size:16pt;
+				text-align:center;
+				border-radius:3px;
+				}
+			@include breakpoint(smaller2){
+				margin-left:120px;
+			}
+			@include breakpoint(smaller3){
+				margin-left:160px;
+			}
+			@include breakpoint(tablet){
+				margin-left:250px;
+			}
+			@include breakpoint(tablet2){
+				margin-left:320px;
+			}
+			@include breakpoint(desktop){
+				display:none;
+			}
+		}
+		.btn-link {
+			float: left;
+			padding-left:15px;
+			padding-right:40px;
+			padding-bottom:5px;
+			font-size:2.5em;
+			text-decoration: none;
+		} 
+		 
+	}
+	#word-logo {
+		padding: .5em 0;
+			img {
+				width:100%;
+				@include breakpoint(smaller) {
+				display:none;
+				}
+			}
+		}
+	nav {
+		display:none;
+		@include breakpoint(smaller){
+			display:block;
+			text-align:center;
+			#tablet-menu{
+				list-style:none;
+				margin: 0;
+				padding:0;
+				margin-top:.5em;
+				box-sizing:border-box;
+				li{
+					display: inline;
+					padding:0;
+					width:12.5%;
+
+					border-left: solid 2px $red;
+					&:first-child{
+						border-left:none;
+					}
+					a{
+						text-decoration: none;
+						color:$red;
+						font-size:.8em;
+						padding:1em .5em;
+					}
+				}
+			}
+		}
+			@include breakpoint(desktop){
+				display:none;
+			}
+		}
+		#sloane-img{
+			display:block;
+		}
+	main {
+		h1{
+			margin:0 auto;
+			text-align:center;
+		}
+		.about-us {
+			padding:1em;
+			margin:0 auto;
+			@include breakpoint(desktop){
+				width:500px;
+			}
+		}
+		.history-p{
+			padding:1em;
+			margin:0 auto;
+			@include breakpoint(desktop){
+				width:500px;
+			}
+		}
+		.find-p{
+			padding:1em;
+			margin:0 auto;
+			@include breakpoint(desktop){
+				width:500px;
+			}
+		}
+		.order-p{
+			padding:1em;
+			margin:0 auto;
+			@include breakpoint(desktop){
+				width:500px;
+			}
+		}
+
+		#welcome{
+			margin-bottom:.5em;
+			@include breakpoint(desktop){
+				position:relative;
+			}
+			p{
+			padding: .5em 1em;
+			margin:0;
+			
+			@include breakpoint (smaller){
+				padding-bottom:1em;
+				clear:after;
+			}
+			@include breakpoint(desktop){
+				color:white;
+			}
+			}
+			#welcome-paragraph{
+				@include breakpoint(desktop){
+					position:absolute;
+					bottom:5%;
+					width:66%;
+				}
+
+			}
+			#welcome-img{
+				position:relative;
+				img {
+					width:100%;
+				}
+				h2 {
+					width:80%;
+					position:absolute;
+					top:55%;
+					left:10%;
+				}
+				@include breakpoint(tablet){
+					width:50%;
+					float:left;
+					padding:1em;
+				}
+				@include breakpoint(desktop){
+					display:none;
+				}
+			}
+			
+			#desktop-milk-image{
+				display:none;
+				@include breakpoint(desktop){
+					display:block;
+					width:100%;
+					margin:0 auto;
+				}
+			}
+		}
+		.heading{
+			position:relative;
+			@include breakpoint(tablet){
+				padding-top:4%;
+			}
+			@include breakpoint(desktop){
+				width:30%;
+				float:left;
+				padding:1em;
+			}
+
+			.milk-splash{
+				width:100%;
+				@include breakpoint(tablet){
+					width:50%;
+					padding:1em;
+				}
+				@include breakpoint(desktop){
+					width:100%;
+					padding:.5em 0;
+				}
+			}
+			p {
+				padding: .5em 1em;
+				margin:0;
+				@include breakpoint(tablet){
+					padding:.5em .5em;
+				}
+				@include breakpoint(desktop){
+					
+					padding: .5em 0;
+					width:100%
+				}
+			}
+		}
+		.page-link{
+				background-color:$red;
+				color:$white;
+				margin:.5em .5em;
+				padding:.3em ;
+				text-decoration:none;
+				font-size:24pt;
+				display:block;
+				text-align:center;
+				border-radius:3px;
+				@include breakpoint(tablet){
+					padding:.5em 0;
+					margin:0 .5em;
+					margin-right:.5em; 
+				}
+				@include breakpoint(desktop){
+					margin:0;
+					width:100%
+				}	
+			}
+		.tablet-text{
+			@include breakpoint(tablet){
+				float:right;
+				width:45%;	
+			}
+			@include breakpoint(desktop){
+				width:100%;
+			}
+		}
+	}
+	footer{
+		padding:1em .5em;
+		text-align:center;
+		background-color:$dark-grey;
+		.nav {
+			list-style: none;
+			margin: 0 auto;
+			padding: 0;
+			li{
+				display:inline;
+				padding:.6em;
+				img {
+					width:35px;
+				}
+			}
+		}
+		p{
+			color:$white;
+		}
+		.site-map{
+			list-style:none;
+			padding:0;
+			margin:0;
+			li {
+				padding:.3em;
+				@include breakpoint(tablet){
+					display:inline;
+				}
+				a{
+					text-decoration:none;
+					font-size:10pt;	
+				}
+			}
+		}
+		img{
+			width:60%;
+			@include breakpoint(tablet){
+				width:40%;
+			}
+			@include breakpoint(desktop){
+				width:30%;
+			}
+		} 
+	}
+	#choc-milk-map {
+		width:100%;
+		height:300px;
+		margin: 0 auto;
+	}
+}
+.form-group{
+	border:none;
+	text-align:center;
+	padding:.5em 0;
+	width:100%;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content:" ";
+	display:table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+

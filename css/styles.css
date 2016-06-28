@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  font-family: 'Open sans', Arial, sans-serif;
+  background-color: white; }
+  @media all and (min-width: 1200px) {
+    body {
+      max-width: 1200px;
+      margin: 0 auto;
+      box-shadow: 0px 0px 6px 2px #888888; } }
+  body a {
+    color: white; }
+  body header {
+    background-color: #35383a; }
+    body header #desktop-menu {
+      display: none; }
+      @media all and (min-width: 960px) {
+        body header #desktop-menu {
+          display: block;
+          float: left;
+          list-style: none;
+          margin: 0;
+          padding-left: .5em;
+          margin-top: .8em;
+          box-sizing: border-box; }
+          body header #desktop-menu li {
+            display: inline;
+            border-left: solid 2px #b11917; }
+            body header #desktop-menu li:first-child {
+              border-left: none; }
+            body header #desktop-menu li a {
+              text-decoration: none;
+              color: white;
+              font-size: 110%;
+              padding: .5em; } }
+  body .navigation {
+    margin: auto;
+    overflow: hidden; }
+    body .navigation .nav {
+      float: left;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      width: 100%; }
+      body .navigation .nav ul {
+        width: 100%; }
+        body .navigation .nav ul li {
+          float: left; }
+    body .navigation #side-logo {
+      display: none; }
+      @media all and (min-width: 550px) {
+        body .navigation #side-logo {
+          display: block;
+          width: 360px;
+          padding: .5em;
+          float: left; } }
+      @media all and (min-width: 960px) {
+        body .navigation #side-logo {
+          display: none; } }
+    @media all and (min-width: 550px) {
+      body .navigation .btn {
+        display: none; } }
+    body .navigation .btn .menu {
+      display: none; }
+    body .navigation .btn:hover .menu {
+      display: block;
+      list-style: none; }
+    body .navigation .menu {
+      padding: 0;
+      clear: both;
+      width: 100%; }
+      body .navigation .menu li {
+        width: 50%;
+        margin: 0 auto; }
+        body .navigation .menu li a {
+          display: block;
+          padding: .5em 0;
+          border: 1px solid #b11917;
+          text-decoration: none;
+          text-align: center;
+          font-size: 14pt; }
+        body .navigation .menu li a:hover {
+          background-color: #f4f4f4; }
+    body .navigation .social-icons {
+      float: right;
+      width: 35px;
+      padding: .5em; }
+    body .navigation #head-sign-up {
+      display: none; }
+      @media all and (min-width: 550px) {
+        body .navigation #head-sign-up {
+          display: inline;
+          float: right;
+          background-color: #b11917;
+          color: white;
+          margin: 0 .5em;
+          padding: 0.5em 0.7em;
+          text-decoration: none;
+          font-size: 16pt;
+          text-align: center;
+          border-radius: 3px; } }
+      @media all and (min-width: 650px) {
+        body .navigation #head-sign-up {
+          margin-left: 120px; } }
+      @media all and (min-width: 750px) {
+        body .navigation #head-sign-up {
+          margin-left: 160px; } }
+      @media all and (min-width: 768px) {
+        body .navigation #head-sign-up {
+          margin-left: 250px; } }
+      @media all and (min-width: 920px) {
+        body .navigation #head-sign-up {
+          margin-left: 320px; } }
+      @media all and (min-width: 960px) {
+        body .navigation #head-sign-up {
+          display: none; } }
+    body .navigation .btn-link {
+      float: left;
+      padding-left: 15px;
+      padding-right: 40px;
+      padding-bottom: 5px;
+      font-size: 2.5em;
+      text-decoration: none; }
+  body #word-logo {
+    padding: .5em 0; }
+    body #word-logo img {
+      width: 100%; }
+      @media all and (min-width: 550px) {
+        body #word-logo img {
+          display: none; } }
+  body nav {
+    display: none; }
+    @media all and (min-width: 550px) {
+      body nav {
+        display: block;
+        text-align: center; }
+        body nav #tablet-menu {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          margin-top: .5em;
+          box-sizing: border-box; }
+          body nav #tablet-menu li {
+            display: inline;
+            padding: 0;
+            width: 12.5%;
+            border-left: solid 2px #b11917; }
+            body nav #tablet-menu li:first-child {
+              border-left: none; }
+            body nav #tablet-menu li a {
+              text-decoration: none;
+              color: #b11917;
+              font-size: .8em;
+              padding: 1em .5em; } }
+    @media all and (min-width: 960px) {
+      body nav {
+        display: none; } }
+  body #sloane-img {
+    display: block; }
+  body main h1 {
+    margin: 0 auto;
+    text-align: center; }
+  body main .about-us {
+    padding: 1em;
+    margin: 0 auto; }
+    @media all and (min-width: 960px) {
+      body main .about-us {
+        width: 500px; } }
+  body main .history-p {
+    padding: 1em;
+    margin: 0 auto; }
+    @media all and (min-width: 960px) {
+      body main .history-p {
+        width: 500px; } }
+  body main .find-p {
+    padding: 1em;
+    margin: 0 auto; }
+    @media all and (min-width: 960px) {
+      body main .find-p {
+        width: 500px; } }
+  body main .order-p {
+    padding: 1em;
+    margin: 0 auto; }
+    @media all and (min-width: 960px) {
+      body main .order-p {
+        width: 500px; } }
+  body main #welcome {
+    margin-bottom: .5em; }
+    @media all and (min-width: 960px) {
+      body main #welcome {
+        position: relative; } }
+    body main #welcome p {
+      padding: .5em 1em;
+      margin: 0; }
+      @media all and (min-width: 550px) {
+        body main #welcome p {
+          padding-bottom: 1em;
+          clear: after; } }
+      @media all and (min-width: 960px) {
+        body main #welcome p {
+          color: white; } }
+    @media all and (min-width: 960px) {
+      body main #welcome #welcome-paragraph {
+        position: absolute;
+        bottom: 5%;
+        width: 66%; } }
+    body main #welcome #welcome-img {
+      position: relative; }
+      body main #welcome #welcome-img img {
+        width: 100%; }
+      body main #welcome #welcome-img h2 {
+        width: 80%;
+        position: absolute;
+        top: 55%;
+        left: 10%; }
+      @media all and (min-width: 768px) {
+        body main #welcome #welcome-img {
+          width: 50%;
+          float: left;
+          padding: 1em; } }
+      @media all and (min-width: 960px) {
+        body main #welcome #welcome-img {
+          display: none; } }
+    body main #welcome #desktop-milk-image {
+      display: none; }
+      @media all and (min-width: 960px) {
+        body main #welcome #desktop-milk-image {
+          display: block;
+          width: 100%;
+          margin: 0 auto; } }
+  body main .heading {
+    position: relative; }
+    @media all and (min-width: 768px) {
+      body main .heading {
+        padding-top: 4%; } }
+    @media all and (min-width: 960px) {
+      body main .heading {
+        width: 30%;
+        float: left;
+        padding: 1em; } }
+    body main .heading .milk-splash {
+      width: 100%; }
+      @media all and (min-width: 768px) {
+        body main .heading .milk-splash {
+          width: 50%;
+          padding: 1em; } }
+      @media all and (min-width: 960px) {
+        body main .heading .milk-splash {
+          width: 100%;
+          padding: .5em 0; } }
+    body main .heading p {
+      padding: .5em 1em;
+      margin: 0; }
+      @media all and (min-width: 768px) {
+        body main .heading p {
+          padding: .5em 0; } }
+      @media all and (min-width: 960px) {
+        body main .heading p {
+          padding: .5em 0;
+          width: 100%; } }
+  body main .page-link {
+    background-color: #b11917;
+    color: white;
+    margin: .5em .5em;
+    padding: 0.3em;
+    text-decoration: none;
+    font-size: 24pt;
+    display: block;
+    text-align: center;
+    border-radius: 3px; }
+    @media all and (min-width: 768px) {
+      body main .page-link {
+        padding: .5em 0;
+        margin: 0 .5em;
+        margin-right: .5em; } }
+    @media all and (min-width: 960px) {
+      body main .page-link {
+        margin: 0;
+        width: 100%; } }
+  @media all and (min-width: 768px) {
+    body main .tablet-text {
+      float: right;
+      width: 45%; } }
+  @media all and (min-width: 960px) {
+    body main .tablet-text {
+      width: 100%; } }
+  body footer {
+    padding: 1em .5em;
+    text-align: center;
+    background-color: #35383a; }
+    body footer .nav {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0; }
+      body footer .nav li {
+        display: inline;
+        padding: .6em; }
+        body footer .nav li img {
+          width: 35px; }
+    body footer p {
+      color: white; }
+    body footer .site-map {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      body footer .site-map li {
+        padding: .3em; }
+        @media all and (min-width: 768px) {
+          body footer .site-map li {
+            display: inline; } }
+        body footer .site-map li a {
+          text-decoration: none;
+          font-size: 10pt; }
+    body footer img {
+      width: 60%; }
+      @media all and (min-width: 768px) {
+        body footer img {
+          width: 40%; } }
+      @media all and (min-width: 960px) {
+        body footer img {
+          width: 30%; } }
+  body #choc-milk-map {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto; }
+
+.form-group {
+  border: none;
+  text-align: center;
+  padding: .5em 0;
+  width: 100%; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }

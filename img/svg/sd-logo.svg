@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 240 35" enable-background="new 0 0 240 35" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M-30.6,0v35h155.2l5-35H-30.6z M133.8,0l-5,35h448.1V0H133.8z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-20.7518" y1="305.4559" x2="-19.7339" y2="305.4559" gradientTransform="matrix(596.7755 0 0 -596.7755 12353.5176 182306.0938)">
+		<stop  offset="0" style="stop-color:#009EE2"/>
+		<stop  offset="0.2437" style="stop-color:#029EE2"/>
+		<stop  offset="0.332" style="stop-color:#099FE1"/>
+		<stop  offset="0.3951" style="stop-color:#15A1E0"/>
+		<stop  offset="0.4458" style="stop-color:#25A3DF"/>
+		<stop  offset="0.4749" style="stop-color:#33A5DE"/>
+		<stop  offset="0.9945" style="stop-color:#6DC5D8"/>
+		<stop  offset="1" style="stop-color:#6DC5D8"/>
+	</linearGradient>
+	<rect x="-30.6" y="0" clip-path="url(#SVGID_2_)" fill="url(#SVGID_3_)" width="607.4" height="35"/>
+</g>
+<text transform="matrix(1 0 0 1 4.4854 22.9834)" fill="#FFFFFF" font-family="'BankGothic-Medium'" font-size="24.146">Sharper</text>
+<text transform="matrix(1 0 0 1 137.4855 22.9834)" fill="#FFFFFF" font-family="'BankGothic-Medium'" font-size="24.146">Digital</text>
+</svg>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+	<title>Milk OrderPage</title>
+		<meta charset="utf-8">
+	<meta name="description" content="The order page to order your milk, members only.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet"  href="css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<ul id="desktop-menu">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about-us.html">ABOUT US</a></li>
+				<li><a href="history.html">HISTORY</a></li>
+				<li><a href="order-milk.html">ORDER MILK</a></li>
+				<li><a href="science.html">SCIENCE</a></li>
+				<li><a href="recipes.html">RECIPES</a></li>
+				<li><a href="find-milk.html">FIND MILK</a></li>
+				<li><a href="sign-up.html">SIGN UP</a></li>
+			</ul>
+		<div class="navigation">
+			<ul class="nav">
+				<li><a href="http://www.plus.google.com" class="social-icons"><img src="img/svg/google+.svg" alt="Google Plus link button"></a></li>
+				<li><a href="http://www.twitter.com" class="social-icons"><img src="img/svg/twitter.svg" alt="Twitter link button"></a></li>
+				<li><a href="http://www.facebook.com" class="social-icons" id="facebook"><img src="img/svg/facebook.svg" alt="Facebook link button"></a></li>
+				<li id="side-logo"><a href="index.html"><img src="img/svg/side-logo.svg" alt="Wellington Chocolate Milkers Logo with Cow"></a></li>
+				<li><a href="sign-up.html" id="head-sign-up">Sign-up <i class="fa fa-arrow-right"></i></a></li>
+				<li class="btn"><a href="#" class="btn-link">&#9776;</a>
+
+					<ul class="menu">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about-us.html">ABOUT US</a></li>
+						<li><a href="history.html">HISTORY</a></li>
+						<li><a href="order-milk.html">ORDER MILK</a></li>
+						<li><a href="science.html">SCIENCE</a></li>
+						<li><a href="recipes.html">RECIPES</a></li>
+						<li><a href="find-milk.html">FIND MILK</a></li>
+						<li><a href="sign-up.html">SIGN UP</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+  </header>
+	<nav>
+		<ul id="tablet-menu">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="about-us.html">ABOUT US</a></li>
+			<li><a href="history.html">HISTORY</a></li>
+			<li><a href="order-milk.html">ORDER MILK</a></li>
+			<li><a href="science.html">SCIENCE</a></li>
+			<li><a href="recipes.html">RECIPES</a></li>
+			<li><a href="find-milk.html">FIND MILK</a></li>
+		</ul>
+	</nav>
+	<div id="word-logo">
+		<img src="img/svg/wcm-logo.svg" alt="Wellington Chocolate Milkers">
+	</div>
+
+
+		
+	<main class="clearfix">	
+		<h1>Order Some Milk!</h1>
+		<p class="order-p">Don't want to hunt for your chocolate milk? Tired of running around town? Use our order form here and the next meeting of the Wellington Chocolate Milkers will have an order for you!</p>
+		<form method="POST" action="http://brettt.yoobee.net.nz/formtest/"  id="order-milk-form" novalidate>
+			<div class="clearfix">
+				
+				<div class="cleafix">
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input id="email" name="email" type="email" required>
+						<span id="email-error"></span>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input id="password" name="password" type="password" required>
+						<span id="password-error"></span>
+					</div>
+				</div>
+				<div class="form-group">
+				<label for="750ml-milk">750ml Milk</label>
+					<select id="750ml-milk" required>
+						<option value="">&nbsp;</option>
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+					</select>
+					
+					<span id="750ml-milk-error"></span>
+				</div>
+				<div class="form-group">
+					<label for="300ml-milk">350ml Milk</label>
+					<select id="300ml-milk" required>
+						<option value="">&nbsp;</option>
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+					</select>
+					
+					<span id="350ml-milk-error"></span>
+				</div>
+				
+					
+					<div class="form-group">
+						<input id="submit-button" type="submit" value="Confirm Order">
+					</div>
+				</div>	
+			</form>
+		
+		
+	</main>
+	<footer class="clearfix">
+		<ul class="nav">
+		  <li><a href="http://www.plus.google.com"><img src="img/svg/google+.svg" alt="google plus link"></a></li>
+		  <li><a href="http://www.twitter.com"><img src="img/svg/twitter.svg" alt="twitter link"></a></li>
+		  <li><a href="http://www.facebook.com"><img src="img/svg/facebook.svg" alt="facebook link"></a></li>
+		</ul>
+		<p>Contact Us <br>
+		027 876 3000 <br>
+		wchocolatemilk@wcm.co.nz</p>
+		<ul class="site-map">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="about-us.html">ABOUT US</a></li>
+			<li><a href="history.html">HISTORY</a></li>
+			<li><a href="order-milk.html">ORDER MILK</a></li>
+			<li><a href="science.html">SCIENCE</a></li>
+			<li><a href="recipes.html">RECIPES</a></li>
+			<li><a href="find-milk.html">FIND MILK</a></li>
+			<li><a href="sign-up.html">SIGN UP</a></li>
+		</ul>
+		<p>Website Designed By:</p>
+		<a href="#"><img src="img/svg/sd-logo.svg" alt="Sharper Digital Logo website link"></a>
+  	</footer>
+	<script src="js/form-validation-kit.js"></script>
+	<script> 
+	document.addEventListener("DOMContentLoaded", function() {
+
+	var contactForm = document.querySelector("#order-milk-form");
+
+	addFormValidation(orderMilkForm);
+	});
+	</script>
+</body>
+</html>
