@@ -49,25 +49,25 @@ function milkMap() {
 	} 
 }
 
-// function showClosestMarker( userMarker, storeMarkers) {
-// 	var theClosestStore;
-// 	var theClosestDistance;
-// 	for(var i=0; i<storeMarkers.length; i++ ){
-// 		var storeToCheck = storeMarkers[i];
-// 		var storeLatLng = new google.maps.LatLng(storeToCheck.position.lat(), storeToCheck.position.lng());
-// 		var userLatLng = new google.maps.LatLng(userMarker.position.lat(), userMarker.position.lng());
-// 		var distance = google.maps.geometry.spherical.computeDistanceBetween( userLatLng, storeLatLng );
-// 		console.log(distance);
-// 		if( theClosestDistance == undefined ) {
-// 			theClosestDistance = distance;
-// 			theClosestStore = storeToCheck;
-// 		} else if( theClosestDistance > distance ) {
-// 			theClosestDistance = distance;
-// 			theClosestStore = storeToCheck;
-// 		}
-// 	}
-// 	theClosestStore.setAnimation(google.maps.Animation.BOUNCE)
-// 	theClosestStore.setIcon("img/markers/closest-milk-marker.png")
-// }
+function showClosestMarker( userMarker, storeMarkers) {
+	var theClosestStore;
+	var theClosestDistance;
+	for(var i=0; i<storeMarkers.length; i++ ){
+		var storeToCheck = storeMarkers[i];
+		var storeLatLng = new google.maps.LatLng(storeToCheck.position.lat(), storeToCheck.position.lng());
+		var userLatLng = new google.maps.LatLng(userMarker.position.lat(), userMarker.position.lng());
+		var distance = google.maps.geometry.spherical.computeDistanceBetween( userLatLng, storeLatLng );
+		console.log(distance);
+		if( theClosestDistance == undefined ) {
+			theClosestDistance = distance;
+			theClosestStore = storeToCheck;
+		} else if( theClosestDistance > distance ) {
+			theClosestDistance = distance;
+			theClosestStore = storeToCheck;
+		}
+	}
+	theClosestStore.setAnimation(google.maps.Animation.BOUNCE)
+	theClosestStore.setIcon("img/markers/closest-milk-marker.png")
+}
 
 
